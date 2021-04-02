@@ -3,7 +3,7 @@ layout: post
 title:  "Chrome Mouse-Tracking Studie: Von Daten zu Modell"
 ---
 
-![Header image](/assets/header_img.png)
+![Header image](/assets/header_img.PNG)
 
 # Kontext/Einleitung
 

@@ -4,7 +4,7 @@ title:  "Chrome Mouse-Tracking Studie:
 Sammeln der Daten"
 ---
 
-![Header image](/assets/header_img.png)
+![Header image](/assets/header_img.PNG)
 
 
 VIPFY's Ziel ist es, Anwendungen sicherer zu machen, indem wir einen Algorithmus entwickeln, der einen berechtigten Nutzer von einem Angreifer unterscheiden kann, basierend auf Mausnutzung. Zu diesem Zweck führten wir 2020 eine Studie durch, die Mausnutzungsdaten mithilfe einer Chrome Extension sammelt, sodass wir an diesem Algorithmus weiter forschen und ihn verbessern können. <br/><br/>
