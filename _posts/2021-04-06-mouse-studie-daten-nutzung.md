@@ -25,7 +25,7 @@ Ziel ist es, für einen Nutzer und eine Mausaktion zu entscheiden, ob die Mausak
 Leider lassen sich die oben beschriebenen Rohdaten nicht einfach, zusammen mit einer Beschreibung des gewünschten Resultats, in einen ML-Algorithmus werfen, und dabei entsteht auf magische Art und Weise ein fertiges Modell - zumindest derzeit noch nicht. Stattdessen ist es notwendig, die Rohdaten in ein Format umzuwandeln, mit dem gängige Machine-Learning-Algorithmen umgehen können. Typischerweise ist dieses Format eine Tabelle - in mathematischem Fachjargon auch Matrix genannt, wie sie unten abgebildet ist. In dieser Tabelle entspricht jede Zeile einer Stichprobe, in unserem Fall einer Mausaktion. Die Tabelle ist weiterhin eingeteilt in sogenannte Features und Labels. Dabei enthält die letzte Spalte die Labels, alle anderen entsprechen Features. Features sind schlichtweg Eigenschaften der Stichproben, in unserem Fall könnte ein Feature beispielsweise sein, wie gerade eine Mausbewegung ist. Die Labels entsprechen einfach, was wir als Resultat haben möchten. In unserem Fall also eine 1, sollte die Mausaktion zu dem validen Nutzer gehören und eine 0, sollte sie zu einem anderen Nutzer bzw. Angreifer gehören. 
 
 <br/>
-![Xy matrix example](/assets/xy_matrix_example.png)
+![Xy matrix example](/assets/xy_matrix_example.PNG)
 <br/><br/>
 
 Der erste Schritt hin zur gewünschten Tabelle ist es, aus den Rohdaten einzelne Mausaktionen zu extrahieren. Eine mögliche Strategie ist es, die Rohdaten in sogenannte "Point & Click " - Aktionen zu unterteilen. Das bedeutet, man setzt eine Mausaktion gleich mit einem Click und dem Pfad, den der Cursor zu diesem Click hin durchlaufen hat. Sonstige Mausbewegungen, die nicht in einem Click enden, werden verworfen.
