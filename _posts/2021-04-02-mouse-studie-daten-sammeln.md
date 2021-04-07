@@ -7,7 +7,7 @@ Sammeln der Daten"
 ![Header image](/assets/header_img.PNG)
 
 
-VIPFY's Ziel ist es, Anwendungen sicherer zu machen, indem wir einen Algorithmus entwickeln, der einen berechtigten Nutzer von einem Angreifer unterscheiden kann, basierend auf Mausnutzung. Zu diesem Zweck führten wir 2020 eine Studie durch, die Mausnutzungsdaten mithilfe einer Chrome Extension sammelt, sodass wir an diesem Algorithmus weiter forschen und ihn verbessern können. <br/><br/>
+VIPFY's Ziel ist es, Anwendungen sicherer zu machen, indem wir einen Algorithmus entwickeln, der einen berechtigten Nutzer von einem Angreifer unterscheiden kann, basierend auf Mausnutzung. Zu diesem Zweck führten wir 2020 eine Studie durch, die Mausnutzungsdaten mithilfe einer Chrome Extension sammelte, sodass wir an diesem Algorithmus weiter forschen und ihn verbessern können. <br/><br/>
 
 # Übersicht
 
@@ -30,7 +30,7 @@ Um ein Weiterforschen an dem Sicherheits-Algorithmus zu ermöglichen, sammelte d
 # Details Dateiformat
 
 Die von der Extension gesammelten Daten werden im JSON Line Format gespeichert.
-Dabei startet jede Datei mit einem FileStart-Event (fs), welche folgendes enthält:
+Dabei startet jede Datei mit einem FileStart-Event (fs), welches folgendes enthält:
 * ID der derzeitigen Session
 * Zeit, die seit dem Start der Extension-Lifetime vergangen ist
 * Versions-Nummer der Extension
@@ -60,7 +60,7 @@ Um die Daten kompakter zu halten, wurde die Relative-Property eingeführt. Falls
 ![Pc Example](/assets/pc_example.png)
 <br/><br/>
 
-In dem obigen Beispiel startet nach dem PageChange-Event eine neue Sektion. Das erste Mouse-Event ist nicht relativ zu einem vorherigen Event. Es enthält die Position in Client-Koordinaten und die Zeit relativ zum Laden des aktuellen Dokuments. Alle der folgenden Events sind relativ zu dem jeweils vorherigen. Zum Beispiel kann für das dritte mm-Event nach dem pc-Event die y-Koordinate rekonstruiert werden, indem man die y-Koordinate des mm-Events mit Relative false betrachtet und die y-Koordinaten der zwei folgenden Events dazu addiert.
+In dem obigen Beispiel startet nach dem PageChange-Event eine neue Sektion. Das erste Mouse-Event nach dem pc-Event ist nicht relativ zu einem vorherigen Event. Es enthält die Position in Client-Koordinaten und die Zeit relativ zum Laden des aktuellen Dokuments. Alle der folgenden Events sind relativ zu dem jeweils vorherigen. Zum Beispiel kann für das dritte mm-Event nach dem pc-Event die y-Koordinate rekonstruiert werden, indem man die y-Koordinate des mm-Events mit Relative false betrachtet und die y-Koordinaten der zwei folgenden Events dazu addiert.
 <br/><br/>
 
 # Die Extension
