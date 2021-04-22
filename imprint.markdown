@@ -1,10 +1,8 @@
 ---
 layout: page
-title: About
-permalink: /about/
+title: Imprint
+permalink: /imprint/
 ---
-
-# Impressum
 
 Verantwortliche Stelle nach dem Datenschutzgesetz, insbesondere der EU Allgemeine Datenschutzverordnung (GDPR), ist
 
